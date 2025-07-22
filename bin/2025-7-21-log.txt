@@ -1,0 +1,12 @@
+10:25:34 => first log message10:25:34 => /home/zty/MP_RPC/example/callee/friendservice.cc:main:4920:42:57 => [error] first log message
+20:42:57 => [error] /home/zty/MP_RPC/example/callee/friendservice.cc:main:49
+20:42:57 => [info] service_name: FriendServiceRpc
+20:42:57 => [info] method_name: GetFriendsList
+20:45:40 => [error] first log message
+20:45:40 => [info] /home/zty/MP_RPC/example/callee/friendservice.cc:main:49
+20:45:40 => [info] service_name: FriendServiceRpc
+20:45:40 => [info] method_name: GetFriendsList
+21:8:57 => [error] first log message
+21:8:57 => [error] /home/zty/MP_RPC/example/callee/friendservice.cc:main:49
+21:8:57 => [info] service_name: FriendServiceRpc
+21:8:57 => [info] method_name: GetFriendsList

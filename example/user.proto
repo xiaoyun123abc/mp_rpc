@@ -1,0 +1,90 @@
+/*
+一.消息类的实现:
+对于每个 message 定义，会生成对应的 C++ 类，包括：
+(1)ResultCode 类
+    成员变量 errcode 和 errmsg 的访问方法（errcode()、set_errcode()、errmsg()、set_errmsg() 等）
+    序列化/反序列化方法（SerializeToString()、ParseFromString() 等）
+(2)LoginRequest 类
+    成员变量 name 和 pwd 的访问方法
+    序列化/反序列化方法
+(3)LoginResponse 类
+    成员变量 result 和 success 的访问方法
+    序列化/反序列化方法
+    其他工具方法
+
+
+二.Service 基类和 Stub 类
+由于 option cc_generic_services = true，会生成 RPC 服务相关的代码：
+(1)UserServiceRpc 类（服务基类）
+    虚函数 Login()，供服务端继承并实现具体逻辑。
+    CallMethod() 方法，用于分发 RPC 调用。
+    GetDescriptor() 方法，提供 Service 的反射信息。
+(2)UserServiceRpc_Stub 类（客户端存根）
+    封装 Login() 方法，供客户端调用。
+    内部通过 RpcChannel 发起 RPC 请求。
+
+
+三.RPC 方法描述符
+生成 RPC 方法的元信息，包括：
+    方法名（Login）
+    输入/输出类型（LoginRequest/LoginResponse）
+    用于反射的 MethodDescriptor。
+*/
+
+syntax = "proto3";
+
+package fixbug;
+
+option cc_generic_services = true;
+
+message ResultCode
+{
+    int32 errcode = 1;
+    bytes errmsg = 2;
+}
+
+//函数的参数类型
+message LoginRequest
+{
+    bytes name = 1;
+    bytes pwd = 2;
+}
+
+//函数的返回值类型
+message LoginResponse
+{
+    ResultCode result = 1;
+    bool success = 2;
+}
+
+
+/*注册方法*/
+message RegisterRequest
+{
+    uint32 id = 1;
+    bytes name = 2;
+    bytes pwd = 3;
+}
+
+message RegisterResponse
+{
+    ResultCode result = 1;
+    bool success = 2;
+}
+
+/*
+在应用层，如果要想将一个服务方法发布成一个可供于远程调用的rpc方法
+--> 先定义proto,定义一个rpc方法的描述，及其参数及响应的消息类型
+--> 使用proto生成相应的proto代码，会生成UserServiceRpc(给服务的发布者提供的)  及  UserServiceRpc_Stub(给服务的消费者提供的)
+--> 继承UserServiceRpc,然后重写在proto文件中定义的rpc方法
+*/
+//rpc函数的描述
+service UserServiceRpc
+{
+    //函数名:Login   参数类型:LoginRequest    返回值类型:LoginResponse
+    rpc Login(LoginRequest) returns(LoginResponse);
+
+    rpc Register(RegisterRequest) returns(RegisterResponse);
+}
+
+

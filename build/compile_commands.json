@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/zty/MP_RPC/src/mprpcapplication.cc",
+  "file": "/home/zty/MP_RPC/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/zty/MP_RPC/src/mprpcconfig.cc",
+  "file": "/home/zty/MP_RPC/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/zty/MP_RPC/src/rpcheader.pb.cc",
+  "file": "/home/zty/MP_RPC/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/zty/MP_RPC/src/rpcprovider.cc",
+  "file": "/home/zty/MP_RPC/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/zty/MP_RPC/src/mprpcchannel.cc",
+  "file": "/home/zty/MP_RPC/src/mprpcchannel.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/zty/MP_RPC/src/mprpccontroller.cc",
+  "file": "/home/zty/MP_RPC/src/mprpccontroller.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/logger.cc.o -c /home/zty/MP_RPC/src/logger.cc",
+  "file": "/home/zty/MP_RPC/src/logger.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/src",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/mprpc.dir/zookeeperutil.cc.o -c /home/zty/MP_RPC/src/zookeeperutil.cc",
+  "file": "/home/zty/MP_RPC/src/zookeeperutil.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/zty/MP_RPC/example/callee/friendservice.cc",
+  "file": "/home/zty/MP_RPC/example/callee/friendservice.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/example/callee",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/zty/MP_RPC/example/friend.pb.cc",
+  "file": "/home/zty/MP_RPC/example/friend.pb.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/zty/MP_RPC/example/caller/callfriendservice.cc",
+  "file": "/home/zty/MP_RPC/example/caller/callfriendservice.cc"
+},
+{
+  "directory": "/home/zty/MP_RPC/build/example/caller",
+  "command": "/usr/bin/g++   -I/home/zty/MP_RPC/src/include -I/home/zty/MP_RPC/example  -g   -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/zty/MP_RPC/example/friend.pb.cc",
+  "file": "/home/zty/MP_RPC/example/friend.pb.cc"
+}
+]
